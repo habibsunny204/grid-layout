@@ -51,6 +51,63 @@
             grid-template-columns: repeat(2, 1fr);
             gap: 5px;
         }
+
+        @media screen and (max-width:575.9899px) {
+            .header {
+                margin-bottom: 4px;
+            }
+
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .img-1 {
+                height: 40vh;
+            }
+
+            .colum-1,
+            .colum-2 {
+                height: 100%;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 4px;
+                margin-bottom: 4px;
+            }
+
+            .fours {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 4px;
+            }
+
+        }
+
+        @media screen and (min-width:576px) and (max-width:991.9899px) {
+            .header {
+                margin-bottom: 4px;
+            }
+
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .img-1 {
+                height: 80vh;
+            }
+
+            .colum-1 img {
+                height: 300px;
+            }
+
+            .colum-2>img {
+                height: 300px
+            }
+
+            .colum-1,
+            .colum-2 {
+                height: 100%;
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
     </style>
 </head>
 
