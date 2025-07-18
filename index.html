@@ -5,10 +5,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid layout</title>
+    <style>
+        html {
+            font-size: 16px;
+        }
+
+        .header {
+            margin-bottom: 5px;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+        }
+
+        .img-1 {
+            height: 60vh;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .colum-1,
+        .colum-2 {
+            height: 400px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+            margin-bottom: 5px;
+        }
+
+        .twos {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 5px;
+        }
+
+        .twos img {
+            height: 197.5px;
+        }
+
+        .fours {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+        }
+    </style>
 </head>
 
 <body>
+    <section class="header">
+        <h1>My Picture Collage</h1>
+        <div class="img-1">
+            <img src="images/A.jpg" alt="">
+        </div>
+    </section>
+    <section class="main">
+        <div class="marged">
+            <div class="colum-1">
+                <div>
+                    <img src="images/B.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/C.jpg" alt="">
+                </div>
+                <div class="twos">
+                    <img src="images/D.jpg" alt="">
+                    <img src="images/E.jpg" alt="">
+                </div>
 
+            </div>
+            <div class="colum-2">
+                <img src="images/F.jpg" alt="">
+                <div class="fours">
+                    <img src="images/G.jpg" alt="">
+                    <img src="images/G.jpg" alt="">
+                    <img src="images/G.jpg" alt="">
+                    <img src="images/G.jpg" alt="">
+                </div>
+                <img src="images/H.jpg" alt="">
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
